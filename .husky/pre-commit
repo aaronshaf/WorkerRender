@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run build to catch TypeScript errors
+echo "Running build to check for TypeScript errors..."
+pnpm build || {
+  echo "❌ Build failed. Please fix TypeScript errors before committing."
+  exit 1
+}
+
+echo "✅ Build successful"

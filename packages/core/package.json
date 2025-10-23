@@ -1,0 +1,64 @@
+{
+  "name": "@worker-render/core",
+  "version": "0.1.0",
+  "description": "Universal JSX runtime and routing for server-side rendering with Service Worker support",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./jsx-runtime": {
+      "types": "./dist/jsx-runtime.d.ts",
+      "default": "./dist/jsx-runtime.js"
+    },
+    "./jsx-dev-runtime": {
+      "types": "./dist/jsx-runtime.d.ts",
+      "default": "./dist/jsx-runtime.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "default": "./dist/client.js"
+    },
+    "./build": {
+      "types": "./dist/build.d.ts",
+      "default": "./dist/build.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "jsx",
+    "ssr",
+    "service-worker",
+    "dom-morphing",
+    "universal",
+    "hono"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashafovaloff/WorkerRender.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/ashafovaloff/WorkerRender#readme",
+  "bugs": "https://github.com/ashafovaloff/WorkerRender/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "hono": "^4.10.1",
+    "typescript": "^5.4.0"
+  }
+}

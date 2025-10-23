@@ -1,0 +1,16 @@
+{
+  "name": "worker-render",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Universal TSX Framework — Hono + Vite + Service Worker SSR",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "clean": "pnpm -r exec rm -rf dist",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
